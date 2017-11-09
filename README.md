@@ -1,2 +1,1 @@
-exo thomas
 
