@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>chat</title>
 		<meta charset UTF-8>
-		
-<body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-<h1>Chat</h1>
-
-<input type="text" id="send_text">
-<input type="button" id="send_button" value="send">
-
-<script src="script/script.js"></script>
-		
+		<link rel="stylesheet" href="css/styles.css">
+		<body>
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<h1>Chat</h1>
+			<script src="script/script.js"></script>
 			
-</body>
-
-</html>
+			<div id="messages">
+			</div>
+			<form method="POST" action="traitement.php">
+				Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
+				Message : <textarea name="message" id="message"></textarea><br />
+				<input type="submit" name="submit" value="Envoyez votre message !" id="envoi" />
+			</form>
+			
+			
+		</body>
+	</html>
