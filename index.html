@@ -4,20 +4,36 @@
 		<title>Chat</title>
 		<meta charset UTF8>
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	</head>
-		
-<body>
+	
+	<body>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<header class="container bg-warning text-white col-sm">
+			<h1>Chat</h1>
+		</header>
 
-<h1>Chat</h1>
+		<div class="container-fluid">
+			<div class="row col-sm" id="hauteurL">
+				<div class="col bg-warning col-sm">A GAUCHE</div>
+				<div class="col bg-white col-sm">
+					<div class="row hauteurR">
+						<div class="col bg-success col-sm">EN HAUT A DROITE
+						</div>
+					</div>
+					<div id="send" class="row hauteurR">
+						<div class="col bg-danger col-sm">
+							<input type="text" id="send_text">
+							<input type="button" id="send_button" value="send">
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
 
-<input type="text" id="send_text">
-<input type="button" id="send_button" value="send">
-
-<script src="script/script.js"></script>
-		
+			<script src="script/script.js"></script>
 			
-</body>
-
-</html>
+			
+		</body>
+	</html>

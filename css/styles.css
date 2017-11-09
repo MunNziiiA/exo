@@ -5,3 +5,12 @@ h1 {
 	text-align: center;
 	color: black;
 }
+#hauteurL {
+    height: 100vh;
+}
+.hauteurR {
+    height: 50vh;
+}
+#send {
+	text-align: center;
+}
