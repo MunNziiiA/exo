@@ -51,6 +51,7 @@ $.ajax({
 	}
 }).done(function(messages) {
 	for(i = 0; i < messages.length; i++) {
-		console.log(messages[i]);
+		document.getElementById('messages').innerHTML += messages[i]['text']+"<br>";
+		// console.log(messages[i]['text']);
 	};	
 });
