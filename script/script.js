@@ -20,7 +20,7 @@ $('#send_button').click(function() {
 		data: {
 			authKey: utilisateur.authKey,
 			to: 0,
-			text: $('#send_text')
+			text: $('#send_text').val()
 		}
 	}).done(function(sendmessages) {
 		for(i = 0; i < sendmessages.length; i++) {
