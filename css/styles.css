@@ -1,14 +1,12 @@
 h1 {
 	text-align: center;
 }
-#hauteurL {
-    height: 90vh;
-    width: 100%;
-}
 #send_text {
-	margin-top: 530px;
-	width: 500px;
+	margin-top: 520px;
+	margin-bottom: 30px;
+	width: 600px;
 }
 #send_button {
-	margin-top: 530px;
+	margin-top: 520px;
+	margin-bottom: 30px;
 }
