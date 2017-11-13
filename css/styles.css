@@ -1,16 +1,12 @@
-body {
-	background-color: pink;
-}
 h1 {
 	text-align: center;
-	color: black;
 }
-#hauteurL {
-    height: 100vh;
+#send_text {
+	margin-top: 520px;
+	margin-bottom: 30px;
+	width: 600px;
 }
-.hauteurR {
-    height: 50vh;
-#send {
-	text-align: center;
-}
+#send_button {
+	margin-top: 520px;
+	margin-bottom: 30px;
 }
