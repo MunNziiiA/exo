@@ -29,15 +29,28 @@ $('#send_button').click(function() {
 	});
 });
 
-// $.ajax({
-// 	url: 'http://messenger.api.niamor.com/getMessages',
-// 	method: 'post',
-// 	data: {
-// 		authKey: "gFe85722f5247b18a4e525ebd12965db",
-// 		lastId: 0
-// 	}
-// }).done(function(messages) {
-// 	for(i = 0; i < messages.length; i++) {
-// 		console.log(messages[i]);
-// 	};	
-// });
+var Users;
+
+$.ajax({
+	url: 'http://messenger.api.niamor.com/getUsers',
+	method: 'post'
+}).done(function(users) {
+	for(i = 0; i < users.length; i++) {
+		Users = users[i];
+		// console.log(Users);
+	}
+	
+});
+
+$.ajax({
+	url: 'http://messenger.api.niamor.com/getMessages',
+	method: 'post',
+	data: {
+		authKey: utilisateur.authKey,
+		lastId: 0
+	}
+}).done(function(messages) {
+	for(i = 0; i < messages.length; i++) {
+		console.log(messages[i]);
+	};	
+});
