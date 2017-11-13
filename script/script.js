@@ -24,6 +24,7 @@ $('#send_button').click(function() {
 		}
 	}).done(function(sendmessages) {
 		for(i = 0; i < sendmessages.length; i++) {
+			// document.getElementById('messages').innerHTML += ;
 			console.log(sendmessages);
 		}
 	});
@@ -51,7 +52,7 @@ $.ajax({
 	}
 }).done(function(messages) {
 	for(i = 0; i < messages.length; i++) {
-		document.getElementById('messages').innerHTML += messages[i]['text']+"<br>";
-		// console.log(messages[i]['text']);
+		document.getElementById('messages').innerHTML += messages[i]['from']+": "+messages[i]['text']+"<br>";
+		console.log(messages[i]);
 	};	
 });

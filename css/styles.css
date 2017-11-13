@@ -2,15 +2,17 @@ h1 {
 	text-align: center;
 }
 #send_text {
-	margin-top: 520px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	width: 600px;
 }
 #send_button {
-	margin-top: 520px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 #chatbox {
 	border: solid 1px;
-
+	width: auto;
+	height: 450px;
+	overflow: auto;
 }
